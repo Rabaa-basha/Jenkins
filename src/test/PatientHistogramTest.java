@@ -6,6 +6,15 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class PatientHistogramTest
 {
+	
+	public class NewTest {		
+	    private WebDriver driver;		
+		@Test				
+			public void testEasy() {	
+			driver.get("http://demo.guru99.com/test/guru99home/");  
+			String title = driver.getTitle();				 
+			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+	}	
 	@Test
     public void Add_Histo() {
 		PatientHistogram patientHistogram = new PatientHistogram();
